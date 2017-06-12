@@ -1,0 +1,240 @@
+/* Resets */
+
+* { 
+	margin: 0;
+	padding: 0; 
+}
+
+body { 
+	font-family: 'Raleway', sans-serif;
+}
+
+body, html{
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+
+
+.main { 
+	height: 100%;
+	background-image: url('../Images/Portfolio/home-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	position: relative;
+}
+
+.main:after { 
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.3);
+	content: '';
+	z-index: 1;
+}
+
+
+
+/* titles */
+
+.title { 
+	position: absolute;
+	color: white;
+	text-align: left;
+	clear: both;
+	width: 100%;
+	z-index: 2;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 30px;
+	line-height: 40px;
+}
+
+h1 { 
+	font-size: 21px; 
+}
+
+h2 { 
+	font-size: 22px; 
+	margin-top: 40px;
+	font-weight: 500;
+}
+
+
+
+/* Header section */
+#head { 
+	width: 100%;
+	height: 240px;
+	background-image: url('../Images/Portfolio/header-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	position: relative;
+}
+
+
+#head:before { 
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	content: '';
+	z-index: 1;
+}
+
+
+
+/* Portfolio section */
+.portfolio { 
+	width: 300px; 
+	height: 250px;
+	margin: 10px auto;
+	display: block;
+}
+
+
+.one, .two, .three, .four, .five {
+	margin-top: 0px;
+}
+
+
+
+
+
+/* Footer section */
+footer { 
+	width: 100%;
+	height: auto;
+	background-color: black;
+	margin-top: 40px;
+}
+
+footer:after { 
+	content: ""; 
+	display: block;  
+	height: 0;   
+	clear: both; 
+}
+
+#footer-container { 
+	width: 95%;
+	margin: 0 auto;
+	padding: 50px 0 50px 0;
+	color: #fff;
+}
+
+#footer-container:after { 
+	content: ""; 
+	display: block;  
+	height: 0;   
+	clear: both; 
+}
+
+.social { 
+	text-align: center;
+}
+
+.social a { 
+	text-decoration: none;
+	display: inline-block;
+}
+
+.linkedin, .beehance {
+	margin-right: 10px;
+}
+
+.linkedin img, .beehance img, .github img { 
+	width: 50px; 
+	height: 50px;
+}
+
+h3 { 
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+@media (min-width: 700px) { 
+	
+
+	#container { 
+		width: 615px;
+		margin: 0 auto;
+	}
+
+	.portfolio { 
+		display: inline-block;
+		margin: 10px 0;
+	}
+	
+	.portfolio:nth-child(even) { 
+		margin-left: 10px;
+	}
+
+	#head { 
+		margin-bottom: 20px;
+	}
+
+	.contact { 
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	.contact-us { 
+		margin-top: 50px;
+		margin-bottom: 10px;
+	}
+
+	.title h1 { 
+		font-size: 40px;
+	}
+
+}
+
+
+
+
+
+@media (min-width: 1000px) { 
+
+
+	#container { 
+		height: 100%;
+		width: 1000px;
+		margin: 0 auto;
+		position: relative;
+	}
+	
+	#container.portfolio-container { 
+		height: auto;
+	}
+
+	.header { 
+		width: 1000px;
+		margin: 0 auto;
+	}
+	
+	.portfolio:nth-child(even) { 
+		margin-left: auto;
+	}
+
+	.portfolio.padding { 
+		margin-left: 45px;
+	}
+}
+
+
+
+
+
