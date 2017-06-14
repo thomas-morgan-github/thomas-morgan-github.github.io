@@ -41,16 +41,16 @@ body, html{
 /* titles */
 
 .title { 
-	position: absolute;
 	color: white;
-	text-align: left;
-	clear: both;
-	width: 100%;
 	z-index: 2;
-	padding: 10px;
 	box-sizing: border-box;
 	font-size: 30px;
-	line-height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: 400;
+	text-shadow: 2px 2px #000;
 }
 
 h1 { 
